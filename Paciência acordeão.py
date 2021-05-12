@@ -101,9 +101,10 @@ import random
 random.shuffle(baralho)
 while possui_movimentos_possiveis(baralho):
     print('O estado atual do baralho é:')
-    for e in baralho:
-        print (e)
+    for i,e in enumerate(baralho,1):
+        print(f'{i}. {e}')
     escolha = input('Escolha um número entre os disponívei:')
     if escolha < 0 or escolha > len(baralho):
         print('Essa carta não é valida')
-        escolha = input('Escolha um número entre os disponívei:')
+        escolha = int(input('Escolha um número entre os disponíveis:'))
+
