@@ -91,10 +91,13 @@ print('2. As duas cartas possuem o mesmo naipe.')
 
 print('Desde que alguma das condições acima seja satisfeita, qualquer carta pode ser movimentada.')
 
-inicio = int(input("\nAPERTE: \n[ENTER] PARA JOGAR "))
-
+inicio = input("\nAPERTE: \n[ENTER] PARA JOGAR ")
 
 print('Escolha uma carta (digite um número entre 1 e 49):')
 
-def escolha(carta):
-    if carta >= 1 and <= 49
+baralho = cria_baralho()
+
+import random
+random.shuffle(baralho)
+for e in baralho:
+    print (e)
