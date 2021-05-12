@@ -99,5 +99,16 @@ baralho = cria_baralho()
 
 import random
 random.shuffle(baralho)
-for e in baralho:
-    print (e)
+while possui_movimentos_possiveis(baralho):
+    print('O estado atual do baralho é:')
+    for e in baralho:
+        print (e)
+    escolha = input('Escolha um número entre os disponívei:')
+    if escolha < 0 or escolha > len(baralho):
+        print('Essa carta não é valida')
+        escolha = input('Escolha um número entre os disponívei:')
+
+
+
+
+
