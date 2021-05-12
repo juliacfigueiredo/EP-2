@@ -107,8 +107,3 @@ while possui_movimentos_possiveis(baralho):
     if escolha < 0 or escolha > len(baralho):
         print('Essa carta não é valida')
         escolha = input('Escolha um número entre os disponívei:')
-
-
-
-
-
