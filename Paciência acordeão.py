@@ -1,41 +1,7 @@
-print('Seja bem-vindo(a) ao jogo de Paciência Acordeão! O objetivo deste jogo é colocar todas as cartas em uma mesma pilha.')
-
-print('Existem apenas dois movimentos possíveis:')
-
-print('1. Empilhar uma carta sobre a carta imediatamente anterior;')
-print('2. Empilhar uma carta sobre a terceira carta anterior.')
-
-print('Para que um movimento possa ser realizado basta que uma das duas condições abaixo seja atendida:')
-
-print('1. As duas cartas possuem o mesmo valor ou')
-print('2. As duas cartas possuem o mesmo naipe.')
-
-print('Desde que alguma das condições acima seja satisfeita, qualquer carta pode ser movimentada.')
-
-inicio = int(input("\nAPERTE: \n[ENTER] PARA JOGAR "))
-
-As = ['A♠', 'A♥', 'A♦', 'A♣']
-Dois = ['2♠', '2♥', '2♦', '2♣']
-Tres =  ['3♠', '3♥', '3♦', '3♣']
-Quatro = ['4♠', '4♥', '4♦', '4♣']
-Cinco = ['5♠', '5♥', '5♦', '5♣']
-Seis = ['6♠', '6♥', '6♦', '6♣']
-Sete = ['7♠', '7♥', '7♦', '7♣']
-Oito = ['8♠', '8♥', '8♦', '8♣']
-Nove = ['9♠', '9♥', '9♦', '9♣']
-Dez = ['10♠', '10♥', '10♦', '10♣']
-Valete = ['J♠', 'J♥', 'J♦', 'J♣']
-Dama = ['Q♠', 'Q♥', 'Q♦', 'Q♣']
-Rei = ['K♠', 'K♥', 'K♦', 'K♣']
 
 def cria_baralho():
     baralho = ['A♠', 'A♥', 'A♦', 'A♣','2♠', '2♥', '2♦', '2♣', '3♠', '3♥', '3♦', '3♣', '4♠', '4♥', '4♦', '4♣', '5♠', '5♥', '5♦', '5♣', '6♠', '6♥', '6♦', '6♣', '7♠', '7♥', '7♦', '7♣', '8♠', '8♥', '8♦', '8♣', '9♠', '9♥', '9♦', '9♣', '10♠', '10♥', '10♦', '10♣', 'J♠', 'J♥', 'J♦', 'J♣', 'Q♠', 'Q♥', 'Q♦', 'Q♣', 'K♠', 'K♥', 'K♦', 'K♣']
     return baralho
-
-print('Escolha uma carta (digite um número entre 1 e 49):')
-
-def escolha(carta):
-    if carta >= 1 and <= 49
 
 def extrai_naipe(carta):
     resposta = carta[1]
@@ -111,3 +77,24 @@ def possui_movimentos_possiveis(baralho):
     
     return resposta
 
+print('Seja bem-vindo(a) ao jogo de Paciência Acordeão! O objetivo deste jogo é colocar todas as cartas em uma mesma pilha.')
+
+print('Existem apenas dois movimentos possíveis:')
+
+print('1. Empilhar uma carta sobre a carta imediatamente anterior;')
+print('2. Empilhar uma carta sobre a terceira carta anterior.')
+
+print('Para que um movimento possa ser realizado basta que uma das duas condições abaixo seja atendida:')
+
+print('1. As duas cartas possuem o mesmo valor ou')
+print('2. As duas cartas possuem o mesmo naipe.')
+
+print('Desde que alguma das condições acima seja satisfeita, qualquer carta pode ser movimentada.')
+
+inicio = int(input("\nAPERTE: \n[ENTER] PARA JOGAR "))
+
+
+print('Escolha uma carta (digite um número entre 1 e 49):')
+
+def escolha(carta):
+    if carta >= 1 and <= 49
